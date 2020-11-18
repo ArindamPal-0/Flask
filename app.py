@@ -6,4 +6,8 @@ app = Flask(__name__)
 def helloWorld():
     return "Hello World"
 
+@app.route('/pika')
+def pika():
+    return "Hello pika"
+
 app.run()
